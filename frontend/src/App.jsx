@@ -34,7 +34,7 @@ function App() {
     setStatus("Submitting...");
 
     try {
-      const response = await fetch("http://localhost:5000/api/quote", {
+      const response = await fetch("/api/quote", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

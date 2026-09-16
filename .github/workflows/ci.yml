@@ -31,6 +31,9 @@ jobs:
         working-directory: frontend
         run: npm run build
 
+      - name: Build frontend Docker image
+        run: docker build -t filter-group-solar-frontend ./frontend
+
   backend:
     runs-on: ubuntu-latest
 
@@ -52,3 +55,6 @@ jobs:
       - name: Check backend syntax
         working-directory: backend-new
         run: node --check server.js
+
+      - name: Build backend Docker image
+        run: docker build -t filter-group-solar-backend ./backend-new

@@ -283,3 +283,29 @@ footer {
     align-items: center;
   }
 }
+/* Owner / Contact Name */
+.contact-name {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: white;
+}
+
+/* WhatsApp Button */
+.whatsapp-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #25D366;
+  color: white;
+  padding: 14px 24px;
+  border-radius: 7px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 15px;
+  transition: background 0.3s ease;
+}
+
+.whatsapp-btn:hover {
+  background: #1ebe5d;
+}

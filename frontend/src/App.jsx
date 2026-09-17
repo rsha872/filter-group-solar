@@ -1,4 +1,5 @@
 import AdminDashboard from "./AdminDashboard";
+
 import { useState } from "react";
 import {
   Sun,
@@ -34,7 +35,7 @@ function App() {
     setStatus("Submitting...");
 
     try {
-      const response = await fetch("/api/quote", {
+      const response = await fetch("http://localhost:5000/api/quote", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -101,8 +102,8 @@ function App() {
           </h1>
 
           <p className="hero-text">
-            Reliable solar solutions for homes, businesses and industries.
-            Save money while switching to clean and renewable energy.
+            Filter Groups se PM Surya Ghar Yojana ke tahat Uttar Pradesh mein rooftop solar lagwaein. ₹1,08,000 tak sarkari subsidy + 300 unit free bijli. Abhi apply karein – 9453548609
+            
           </p>
 
           <div className="hero-buttons">

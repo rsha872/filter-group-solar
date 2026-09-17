@@ -100,7 +100,7 @@ app.get("/api/quotes", async (req, res) => {
       quotes: result.rows,
     });
   } catch (error) {
-    console.error("Error fetching quotes:", error.message);
+    console.error("Error fetching quotes:", error);
 
     res.status(500).json({
       success: false,

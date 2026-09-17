@@ -11,8 +11,7 @@ app.use(express.json());
 
 /* PostgreSQL Connection */
 const pool = new Pool({
-  connectionString;
-process.env.Database_URL,
+  connectionString:process.env.DATABASE_URL;
 });
 
 /* Test Database Connection */
